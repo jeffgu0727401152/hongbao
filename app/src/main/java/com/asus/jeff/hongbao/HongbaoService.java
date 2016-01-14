@@ -120,7 +120,9 @@ public class HongbaoService extends AccessibilityService {
 
                 AccessibilityNodeInfo cellNode = nodeInfos.get(size-1);
 
-                Log.e("eventSoucre", mEventNodeInfo.toString());
+                if (mEventNodeInfo!=null) {
+                    Log.e("eventSoucre", mEventNodeInfo.toString());
+                }
                 Log.e("rootNode", rootNode.toString());
 
                 if (!mFromNotification) {
